@@ -9,7 +9,7 @@ function Image(props) {
   const group = useRef()
   const data = useScroll()
   useFrame((state, delta) => {
-    group.current.position.z = THREE.MathUtils.damp(group.current.position.z, Math.max(0, data.delta * 50), 4, delta)
+    group.current.position.z = THREE.MathUtils.damp(group.current.position.z, Math.max(0, data.delta * 60), 4, delta)
     ref.current.material.grayscale = THREE.MathUtils.damp(ref.current.material.grayscale, Math.max(0, 1 - data.delta * 1000), 4, delta)
   })
   return (
@@ -54,12 +54,7 @@ export default function App() {
             <Pages />
           </Scroll>
           <Scroll html>
-            <h2 style={{ position: 'absolute', top: '20vh', left: '-75vw' }}>home</h2>
-            <h2 style={{ position: 'absolute', top: '20vh', left: '25vw' }}>to</h2>
-            <h2 style={{ position: 'absolute', top: '20vh', left: '125vw' }}>be</h2>
-            <h2 style={{ position: 'absolute', top: '20vh', left: '225vw' }}>home</h2>
-            <h2 style={{ position: 'absolute', top: '20vh', left: '325vw' }}>to</h2>
-            <h2 style={{ position: 'absolute', top: '20vh', left: '425vw' }}>be</h2>
+         
           </Scroll>
         </ScrollControls>
         <Preload />
