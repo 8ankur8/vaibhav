@@ -3,7 +3,6 @@ import { Suspense, useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Preload, Image as ImageImpl , Scroll , ScrollControls , useScroll } from '@react-three/drei'
 
-
 function Image(props) {
   const ref = useRef()
   const group = useRef()
