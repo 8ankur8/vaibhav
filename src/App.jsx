@@ -37,12 +37,12 @@ function Pages() {
   const { width } = useThree((state) => state.viewport)
   return (
     <>
-      <Page position={[0, 0, 0]} urls={['/img7.jpg', '/img9.jpg', '/img8.jpg']} />
-      <Page position={[width * 1.25, 0, 0]} urls={['/img1.jpg', '/img2.jpg', '/img3.jpg']} />
-      <Page position={[width * 2.5, 0, 0]} urls={['/img4.jpg', '/img5.jpg', '/img6.jpg']} />
-      <Page position={[width * 3.75, 0, 0]} urls={['/img7.jpg', '/img9.jpg', '/img8.jpg']} />
-      <Page position={[width * 5, 0, 0]} urls={['/img1.jpg', '/img2.jpg', '/img3.jpg']} />
-      <Page position={[width * 6.25, 0, 0]} urls={['/img4.jpg', '/img5.jpg', '/img6.jpg']} /> 
+      <Page position={[0, 0, 0]} urls={['https://i.imgur.com/GfjE0PF.jpg', 'https://i.imgur.com/hzca4ae.jpg', 'https://i.imgur.com/9oZQ5SA.jpg']} />
+      <Page position={[width * 1.25, 0, 0]} urls={['https://i.imgur.com/7wTbc6b.jpg', 'https://i.imgur.com/l4Xlt4m.jpg', 'https://i.imgur.com/icYiMsa.jpg']} />
+      <Page position={[width * 2.5, 0, 0]} urls={['https://i.imgur.com/8ussZIA.jpg', 'https://i.imgur.com/MWSP3yE.jpg', 'https://i.imgur.com/yuPEUWc.jpg']} />
+      <Page position={[width * 3.75, 0, 0]} urls={['https://i.imgur.com/GfjE0PF.jpg', 'https://i.imgur.com/hzca4ae.jpg', 'https://i.imgur.com/9oZQ5SA.jpg']}/>
+      <Page position={[width * 5, 0, 0]} urls={['https://i.imgur.com/7wTbc6b.jpg', 'https://i.imgur.com/l4Xlt4m.jpg', 'https://i.imgur.com/icYiMsa.jpg']} />
+      <Page position={[width * 6.25, 0, 0]} urls={['https://i.imgur.com/8ussZIA.jpg', 'https://i.imgur.com/MWSP3yE.jpg', 'https://i.imgur.com/yuPEUWc.jpg']}/> 
     </>
   )
 }
